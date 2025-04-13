@@ -1,0 +1,14 @@
+site:
+  title: "LandingPage"
+
+server:
+  files:
+    dev:
+      contentRoot: "build/processedResources/js/main/public"
+      script: "build/kotlin-webpack/js/developmentExecutable/havlicektomas.js"
+      api: "build/libs/havlicektomas.jar"
+    prod:
+      script: "build/kotlin-webpack/js/productionExecutable/havlicektomas.js"
+      siteRoot: ".kobweb/site"
+
+  port: 8080
